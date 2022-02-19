@@ -1,0 +1,3 @@
+"0","data(mtcars)"
+"0","efficient <- subset(mtcars, mpg >= 23)"
+"0","head(efficient,3)"

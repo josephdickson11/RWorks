@@ -1,0 +1,8 @@
+"0","lightcars <- mtcars[mtcars$wt < 2.000,]"
+"0","dim(lightcars)"
+"1","[1]"
+"1","  4"
+"1"," 11"
+"1","
+"
+"0","lightcars"

@@ -1,0 +1,2 @@
+"0","questionSubset <- subset(mtcars, mpg >= 30 | hp < 60)"
+"0","head(questionSubset, 3)"

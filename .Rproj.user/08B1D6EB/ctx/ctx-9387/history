@@ -1,0 +1,247 @@
+udacious <- c("Chris Saden", "Lauren Castellano",
+"Sarah Spikes","Dean Eckles",
+"Andy Brown", "Moira Burke",
+"Kunal Chawla")
+numbers <- c(1:10)
+numbers
+numbers <- c(numbers, 11:20)
+numbers
+udacious <- c("Chris Saden", "Lauren Castellano",
+"Sarah Spikes","Dean Eckles",
+"Andy Brown", "Moira Burke",
+"Kunal Chawla", "Oladipupo Ibeun")
+udacious <- c("Chris Saden", "Lauren Castellano",
+"Sarah Spikes","Dean Eckles",
+"Andy Brown", "Moira Burke",
+"Kunal Chawla", "Oladipupo Ibeun")
+mystery = nchar(udacious)
+mystery
+mystery == 11
+udacious[mystery == 11]
+data(mtcars)
+names(mtcars)
+?mtcars
+mtcars
+str(mtcars)
+dim(mtcars)
+# 10. Read the documentation for row.names if you're want to know more.
+?row.names
+# Run this code to change the row names of the cars to numbers.
+row.names(mtcars) <- c(1:32)
+# Now print out the data frame by running the code below.
+mtcars
+data(mtcars)
+head(mtcars, 10)
+?col.names
+??col.names
+?col.names
+# The head() fucntion prints out the first six rows of a data frame
+# by default. Run the code below to see.
+head(mtcars)
+# I think you'll know what this does.
+tail(mtcars, 3)
+mtcars$mpg
+mtcars$cyl
+mtcars$disp
+mtcars$mpg
+mean(mtcars$mpg)
+install.packages("swirl")
+mean(mtcars$mpg)
+?mean
+getwd()
+getwd()
+statesData <- read.csv("stateData.csv")
+head(statesData, 10)
+View(statesData)
+View(statesData)
+View(statesData)
+subset(statesData, state.region == 4)
+#another way to subset
+statesData[statesData$state.region == 1, ]
+#subset data in region 4
+regionFour <- subset(statesData, state.region == 4)
+head(regionFour, 2)
+dim(regionFour)
+regionOne <- statesData[statesData$state.region == 1, ]
+head(regionOne, 2)
+dim(regionOne)
+#illiteracy rate of o.5 percent
+lowIlliteracy <- subset(statesData, illiteracy <= 0.5)
+head(lowIlliteracy, 2)
+View(lowIlliteracy)
+View(lowIlliteracy)
+dim(lowIlliteracy)
+#highschoolgrad above 50%
+highLiteracy <- statesData[statesData$highSchoolGrad >= 50, ]
+head(highLiteracy)
+head(highLiteracy,2)
+dim(highLiteracy)
+?cars
+?cars
+?cars
+?cars
+str(cars)
+plot(cars)
+plot(cars)
+summary(mtcars)
+View(mtcars)
+View(mtcars)
+data(mtcars)
+data(mtcars)
+efficient <- subset(mtcars, mpg >= 23)
+head(efficient)
+dim(efficient)
+data(mtcars)
+efficient <- subset(mtcars, mpg >= 23)
+head(efficient,3)
+dim(efficient)
+dim(efficient)
+subset(mtcars, mpg > 30 & hp > 100)
+subset(mtcars, mpg < 14 | disp > 390)
+subset(mtcars, qsec <= 16.90)
+lightcars <- mtcars[mtcars$wt < 2.000,]
+lightcars <- mtcars[mtcars$wt < 2.000,]
+dim(lightcars)
+lightcars
+View(mtcars)
+View(mtcars)
+mtcars$year <- 1974
+View(mtcars)
+View(mtcars)
+mtcars <- subset(mtcars, select = -year)
+mtcars$year <- 1974
+mtcars <- subset(mtcars, select = -year)
+mtcars$year <- c(1973, 1974)
+View(mtcars)
+View(mtcars)
+mtcars <- subset(mtcars, select = -year)
+mtcars$wt
+cond <- mtcars$wt < 3
+cond
+mtcars$weight_class <- ifelse(cond, 'light', 'average')
+mtcars$weight_class
+cond <- mtcars$wt > 3.5
+mtcars$weight_class <- ifelse(cond, 'heavy', mtcars$weight_class)
+mtcars$weight_class
+rm(cond)
+rm(efficient)
+install.packages('knitr', dependencies = T)
+install.packages("knitr", dependencies = T)
+install.packages("knitr", dependencies = T)
+install.packages("knitr", dependencies = T)
+install.packages("knitr", dependencies = T)
+install.packages("knitr", dependencies = T)
+library(knitr)
+install.packages('knitr', dependencies = T)
+library(knitr)
+install.packages("knitr", dependencies = T)
+install.packages("knitr", dependencies = T)
+install.packages("knitr", dependencies = T)
+install.packages("knitr", dependencies = T)
+install.packages("knitr", dependencies = T)
+install.packages("knitr", dependencies = T)
+install.packages("knitr", dependencies = T)
+questionSubset <- subset(mtcars, mpg >= 30 | hp < 60)
+head(questionSubset, 3)
+dim(questionSubset)
+View(questionSubset)
+redditData <- read.csv('eda-course-materials/lesson2/reddit.csv')
+str(redditData)
+summary(redditData)
+dim(redditData)
+View(redditData)
+View(redditData)
+table(redditData$gender)
+?redditData
+str()
+table(redditData$marital.status)
+#check factor levels
+levels(redditData$marital.status)
+levels(redditData$age.range)
+#plot age range data
+library(ggplot2)
+qplot(data = redditData, x = age.range)
+#plot other factors to check for need to order
+qplot(data = redditData, x = gender)
+#plot other factors to check for need to order
+qplot(data = redditData, x = military.service)
+#plot other factors to check for need to order
+qplot(data = redditData, x = children)
+#plot other factors to check for need to order
+qplot(data = redditData, x = country)
+#plot other factors to check for need to order
+qplot(data = redditData, x = state)
+#plot other factors to check for need to order
+qplot(data = redditData, x = income.range)
+#plot other factors to check for need to order
+qplot(data = redditData, x = cheese)
+income.range
+#plot other factors to check for need to order
+qplot(data = redditData, x = income.range)
+?factor
+#ordering a factor before plotting
+qplot(data = redditData, x  = factor(age.range, ordered = TRUE))
+#ordering a factor before plotting
+qplot(data = redditData, x  = factor(age.range, ordered = is.ordered(age.range)))
+#ordering a factor before plotting
+qplot(data = redditData, x  = ordered(age.range ))
+#ordering a factor before plotting
+qplot(data = redditData, x  = ordered(age.range, levels = levels(redditData$age.range) ))
+#ordering a factor before plotting
+qplot(data = redditData, x  = ordered(age.range, levels =c('Under 18',
+'18-24',
+'25-34',
+'35-44',
+'45-54',
+'55-64',
+'65 or above') ))
+redditData$age.range <- factor(redditData$age.range, levels = c('Under 18',
+'18-24',
+'25-34',
+'35-44',
+'45-54',
+'55-64',
+'65 or above'),
+ordered = T)
+#ordering a factor before plotting
+qplot(data = redditData, x  = ordered(age.range, levels =c('Under 18',
+'18-24',
+'25-34',
+'35-44',
+'45-54',
+'55-64',
+'65 or above') ))
+#reorder income range
+levels(redditData$income.range)
+#ordering a factor before plotting
+qplot(data = redditData, x  = ordered(age.range, levels =c('Under 18',
+'18-24',
+'25-34',
+'35-44',
+'45-54',
+'55-64',
+'65 or above') ))
+redditData$income.range <- factor(redditData$income.range, levels = c(
+"Under $20,000","$20,000 - $29,999","$30,000 - $39,999","$40,000 - $49,999",
+"$50,000 - $69,999","$70,000 - $99,999","$100,000 - $149,999","$150,000 or more"
+), ordered = T)
+qplot(data = redditData, x=income.range)
+qplot(data = redditData, x=country)
+income.range
+qplot(data = redditData, x=income.range)
+getwd()
+list.files()
+getwd()
+list.files()
+pf <- read.csv("pseudo_facebook.tsv", sep = "\t")
+getwd()
+list.files()
+pf <- read.csv("pseudo_facebook.tsv", sep = "\t")
+View(pf)
+View(pf)
+names(pf)
+qplot(data = pf, x=dob_day)
+qplot(data = pf, x=dob_day, binwdth=20)
+qplot(data = pf, x=dob_day)
+install.packages('ggplot2')
+install.packages('ggthemes', dependencies = TRUE)

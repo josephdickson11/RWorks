@@ -1,0 +1,7 @@
+"0","#install.packages('ggplot2')"
+"0","#install.packages('ggthemes', dependencies = TRUE)"
+"0","#library(ggthemes)"
+"0","library(ggplot2)"
+"0","qplot(data = pf, x=dob_day)"
+"2","`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+"
